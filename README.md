@@ -129,7 +129,67 @@ Based on the scenarios explored in the lab, potential defensive measures include
 
 ## 📸 Project Evidence
 
-Screenshots and supporting documentation from the lab will be added to this repository to demonstrate the environment, configurations, alerts and investigation process.
+The following screenshots document the implementation, configuration, connectivity testing, Wazuh deployment, and troubleshooting completed during the lab.
+
+### 🔥 pfSense Firewall Configuration
+
+![pfSense Wazuh Firewall Rules](screenshots/01-pfsense-wazuh-firewall-rules[1].jpg)
+
+Firewall rules were configured in pfSense to control communication between the segmented lab networks and the Wazuh monitoring infrastructure.
+
+### 🌐 Virtual Network Configuration
+
+![VirtualBox LAN Network](screenshots/02-virtualbox-lan-network[1].jpg)
+
+VirtualBox networking was configured to provide isolated virtual network segments for the SOC lab environment.
+
+### 🖥️ DMZ Connectivity Testing
+
+![Ubuntu DMZ Connectivity](screenshots/03-ubuntu-dmz-connectivity[1].jpg)
+
+Connectivity testing was performed from the DMZ endpoint to verify communication across the configured virtual network.
+
+### 🛡️ Wazuh Agent Deployment
+
+![Wazuh Agent Installation](screenshots/04-wazuh-agent-installation[1].jpg)
+
+The Wazuh agent was installed and configured on the monitored endpoint.
+
+### 🔧 Wazuh Enrollment Troubleshooting
+
+![Wazuh Enrollment Troubleshooting](screenshots/05-wazuh-enrollment-troubleshooting[1].jpg)
+
+Agent enrollment and connectivity issues were investigated as part of the deployment and troubleshooting process.
+
+### ✅ Wazuh Agent Running
+
+![Wazuh Agent Running](screenshots/06-wazuh-agent-running[1].jpg)
+
+The Wazuh agent service was verified during endpoint configuration.
+
+### 🖥️ Wazuh Server Network Configuration
+
+![Wazuh Server Network](screenshots/07-wazuh-server-network[1].jpg)
+
+The Wazuh server was configured on the internal monitoring network to support communication with monitored endpoints.
+
+### 🔍 Kali-to-Wazuh Connectivity
+
+![Kali Wazuh Connectivity](screenshots/08-kali-wazuh-connectivity[1].jpg)
+
+Network connectivity between the Kali Linux system and Wazuh infrastructure was tested to validate the lab configuration.
+
+### 🔐 LAN Firewall Rules
+
+![pfSense LAN Firewall Rules](screenshots/09-pfsense-lan-firewall-rules[1].jpg)
+
+LAN firewall policies were implemented in pfSense, including controlled SSH access between the LAN and DMZ segments.
+
+### 🌐 DMZ Interface Configuration
+
+![pfSense DMZ Interface](screenshots/10-pfsense-dmz-interface[1].jpg)
+
+The pfSense DMZ interface was configured with a dedicated subnet to demonstrate network segmentation within the SOC lab.
 
 ---
 
